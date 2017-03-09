@@ -1,0 +1,26 @@
+.btn-container {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+	.carousel-caption {
+		left: 5%;
+		text-align: left;
+	}
+
+	.btn-container {
+		right: 10%;
+		bottom: 20px;
+		padding: 20px 0;
+	}
+
+	.btn-container a.btn {
+		padding: 10px 16px;
+	    font-size: 17px;
+	    line-height: 1.3333333;
+	    border-radius: 3px;
+	    margin: 20px 0;
+	}
+}

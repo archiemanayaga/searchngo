@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>MyHotel</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/global.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      .search-wrapper {
+        height: 600px;
+        position: relative;
+      }
+      .search-wrapper .map-bg {
+        background: url('images/map-bg.png') center no-repeat;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0
+      }
+      .search-wrapper .map-overlay {
+        background-color: #000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: .8;
+      }
+
+      .search-wrapper .container {
+        color: #ffffff;
+        padding-top: 40px;
+      }
+
+      .search-wrapper .container .marg-bot {
+        margin-bottom: 40px;
+      }
+
+      .search-wrapper .container p.marg-bot {
+        font-size: 17px;
+      }
+
+      #custom-search-input{
+          padding: 3px;
+          border: solid 1px #E4E4E4;
+          border-radius: 6px;
+          background-color: #fff;
+      }
+
+      #custom-search-input input{
+          border: 0;
+          box-shadow: none;
+          font-size: 30px;
+      }
+
+      #custom-search-input button{
+          margin: 2px 0 0 0;
+          background: none;
+          box-shadow: none;
+          border: 0;
+          color: #666666;
+          padding: 0 8px 0 10px;
+          border-left: solid 1px #ccc;
+      }
+
+      #custom-search-input button:hover{
+          border: 0;
+          box-shadow: none;
+          border-left: solid 1px #ccc;
+      }
+
+      #custom-search-input .fa-search{
+          font-size: 30px;
+      }
+
+      .thumbnail img {
+        width: 200px;
+        height: 200px;
+      }
+
+      footer {
+        background-color: #000;
+        color: #fff;
+        height: 60px;
+        opacity: .8;
+      }
+      footer p {
+        margin: 20px 0;
+      }
+
+
+      @media (min-width: 768px) {    
+        .search-wrapper .container {
+          padding-top: 80px;
+        }    
+        #custom-search-input.marg-bot {
+          margin-bottom: 60px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+      <div class="search-wrapper">
+        <div class="map-bg"></div>
+        <div class="map-overlay"></div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 class="marg-bot">Search<span class="text-info">'N</span> <span class="text-success">Go</span></h2>
+              <h1 class="marg-bot">Can't Find The Right Store For A Centain Product?</h1>
+              <p class="marg-bot">Locate the nearest store with its cheapest product now!</p>
+              <div id="custom-search-input" class="marg-bot">
+                <div class="input-group col-md-12">
+                  <input type="text" class="form-control input-lg" placeholder="Louis Vuitton Bag" />
+                  <span class="input-group-btn">
+                    <button class="btn btn-info btn-lg" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <div class="page">
+                <h2>Features Available:</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="margin-top: -5%">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="images/map-store.png" alt="Store Pin">
+              <div class="caption">
+                <h3>Locator</h3>
+                <p>Easy way of locating store by its name and product line.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="images/compare-icon-61289.png" alt="Compare Price">
+              <div class="caption">
+                <h3>Compare Price</h3>
+                <p>Procut price comparator to easily fits your budget.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="images/Philippine Map_0.png" alt="Nearest Shop">
+              <div class="caption">
+                <h3>Nearest Shop</h3>
+                <p>Best to know which is the nearest shop for less hassle.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container">
+          <p>Copy Right 2017</p>
+        </div>
+      </footer>
+  </body>
+</html>
